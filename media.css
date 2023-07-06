@@ -1,0 +1,38 @@
+@media (max-width: 600px) {
+
+    .grid_container {
+
+        grid-template-rows: 70px 300px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 300px;
+        grid-template-areas:
+
+        "header1"
+        "main1"  
+        "aside1" 
+    }
+
+
+    .grid_container_footer {
+
+        grid-template-columns:  1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        
+        "footer1" 
+        "footer2" 
+        "footer3" 
+        "footer4" 
+      
+        
+        }
+        
+
+
+
+
+
+
+}

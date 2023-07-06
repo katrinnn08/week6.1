@@ -1,8 +1,9 @@
+@import "./media.css";
+
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    width: 100vh;
 }
 
 
@@ -12,9 +13,8 @@ body {
 
 display: grid;
 gap: 10px;
-grid-template-columns: 895px 495px;
+grid-template-columns: 2fr 1fr;
 grid-template-rows: 100px 300px;
-
 grid-template-areas:
 
 "header1  header1"
@@ -29,8 +29,6 @@ grid-template-areas:
 .header_grid{
 
 display: grid;  
-height: 100px;
-width: 1400px;
 grid-area: header1;
 text-align: center; 
 align-items: center;
@@ -41,14 +39,12 @@ background-color: aquamarine;
 .main_grid {
 
     display: grid;
-    height: 300px;
-    width: 900px;
     grid-area: main1;
     gap: 10px;
     background-color:blanchedalmond;
     align-content:end;
     grid-template-columns: repeat(2, 1fr );
-    grid-template-rows: 70px 70px 70px;  
+    grid-template-rows: 1fr 1fr 1fr;  
     grid-template-areas:
     "text text"
     "else1 else1"
@@ -72,7 +68,6 @@ background-color: aquamarine;
     display: grid; 
     text-align: center;
     align-items: center;
-    height: 70px;
     background-color:rgb(255, 140, 0);
     grid-area: else1;
 
@@ -84,7 +79,7 @@ background-color: aquamarine;
     display: grid; 
     text-align: center;
     align-items: center;
-    height: 70px;
+
     background-color:rgb(255, 140, 0);
     grid-area: else2;
     
@@ -97,7 +92,7 @@ background-color: aquamarine;
     display: grid; 
     text-align: center;
     align-items: center;
-    height: 70px;
+ 
     background-color:rgb(255, 140, 0);
     grid-area: else3;
 
@@ -114,8 +109,6 @@ background-color: aquamarine;
 
     display: grid;
     grid-area: aside1;
-    height: 300px;
-    width: 500px;
     text-align: center; 
     align-items: center;
     background-color:blue;
@@ -126,7 +119,6 @@ background-color: aquamarine;
 
 .footer_one{
     height: 100px;
-    width: 320px ;
     margin: 15px;
     background-color:rgb(0, 255, 85);
 
@@ -136,7 +128,6 @@ background-color: aquamarine;
   
 .footer_two{
     height: 100px;
-    width: 320px ;
     margin: 15px;
     background-color:brown;
 
@@ -146,7 +137,6 @@ background-color: aquamarine;
 .footer_three{
 
     height: 100px;
-    width: 320px ;
     margin: 15px;
     background-color:rgb(208, 0, 255);
 
@@ -155,7 +145,7 @@ background-color: aquamarine;
 .footer_four{
 
     height: 100px;
-    width: 320px ;
+
     margin: 15px;
     background-color:rgb(255, 140, 0);
 
@@ -171,10 +161,8 @@ background-color: aquamarine;
 .grid_container_footer {
 
 display: grid;
-width: 1400px;
-height: 130px;
 margin-top: 10px;
-grid-template-rows: repeat(4, 1fr);
+grid-template-columns: repeat(4, 1fr);
 grid-template-areas:
 
 "footer1  footer2 footer3 footer4";
