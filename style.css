@@ -1,18 +1,17 @@
+@import "./media.css";
+
+
 body {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    width: 100vh;
+    padding: 0; 
 }
 
-
-
-
 .grid_container {
-
+width: 100%; 
 display: grid;
 gap: 10px;
-grid-template-columns: 895px 495px;
+grid-template-columns: 2fr 1fr;
 grid-template-rows: 100px 300px;
 
 grid-template-areas:
@@ -21,16 +20,11 @@ grid-template-areas:
 "main1  aside1"
 }
 
-
-
-
-
-
 .header_grid{
 
 display: grid;  
 height: 100px;
-width: 1400px;
+/* width: 1400px; */
 grid-area: header1;
 text-align: center; 
 align-items: center;
@@ -42,7 +36,7 @@ background-color: aquamarine;
 
     display: grid;
     height: 300px;
-    width: 900px;
+    /* width: 900px; */
     grid-area: main1;
     gap: 10px;
     background-color:blanchedalmond;
@@ -103,19 +97,12 @@ background-color: aquamarine;
 
 }
 
-
-
-
-
-
-
-
 .aside_grid {
 
     display: grid;
     grid-area: aside1;
     height: 300px;
-    width: 500px;
+    /* width: 500px; */
     text-align: center; 
     align-items: center;
     background-color:blue;
@@ -126,7 +113,7 @@ background-color: aquamarine;
 
 .footer_one{
     height: 100px;
-    width: 320px ;
+    /* width: 320px ; */
     margin: 15px;
     background-color:rgb(0, 255, 85);
 
@@ -136,7 +123,7 @@ background-color: aquamarine;
   
 .footer_two{
     height: 100px;
-    width: 320px ;
+    /* width: 320px ; */
     margin: 15px;
     background-color:brown;
 
@@ -146,7 +133,7 @@ background-color: aquamarine;
 .footer_three{
 
     height: 100px;
-    width: 320px ;
+    /* width: 320px ; */
     margin: 15px;
     background-color:rgb(208, 0, 255);
 
@@ -155,23 +142,17 @@ background-color: aquamarine;
 .footer_four{
 
     height: 100px;
-    width: 320px ;
+    /* width: 320px ; */
     margin: 15px;
     background-color:rgb(255, 140, 0);
 
 }
 
 
-
-
-
-
-
-
 .grid_container_footer {
 
 display: grid;
-width: 1400px;
+/* width: 1400px; */
 height: 130px;
 margin-top: 10px;
 grid-template-rows: repeat(4, 1fr);
